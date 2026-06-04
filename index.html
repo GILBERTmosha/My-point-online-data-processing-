@@ -6,11 +6,7 @@
 <title>Online Data Processing System</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     
     body {
         font-family: 'Poppins', sans-serif;
@@ -73,9 +69,7 @@
         z-index: 1;
     }
     
-    .content {
-        padding: 30px;
-    }
+    .content { padding: 30px; }
     
     .tabs {
         display: flex;
@@ -106,9 +100,7 @@
         animation: fadeIn 0.4s;
     }
     
-    .tab-content.active {
-        display: block;
-    }
+    .tab-content.active { display: block; }
     
     @keyframes fadeIn {
         from { opacity: 0; }
@@ -156,14 +148,8 @@
         gap: 10px;
     }
     
-    .icon {
-        font-size: 1.8rem;
-    }
-    
-    p {
-        line-height: 1.8;
-        color: #555;
-    }
+    .icon { font-size: 1.8rem; }
+    p { line-height: 1.8; color: #555; }
     
     .card-grid {
         display: grid;
@@ -239,9 +225,7 @@
         font-weight: 600;
     }
     
-    tr:hover {
-        background: #f9f9f9;
-    }
+    tr:hover { background: #f9f9f9; }
     
     .fact-box {
         background: linear-gradient(135deg, #fff9c4 0%, #fff176 100%);
@@ -304,8 +288,8 @@
     
     <div class="content">
         <div class="tabs">
-            <button class="tab-btn active" onclick="switchTab('english')">English</button>
-            <button class="tab-btn" onclick="switchTab('swahili')">Swahili</button>
+            <button class="tab-btn active" onclick="switchTab('english', this)">English</button>
+            <button class="tab-btn" onclick="switchTab('swahili', this)">Swahili</button>
         </div>
         
         <!-- English Tab -->
@@ -341,26 +325,11 @@
             <div class="section section-green">
                 <h2><span class="icon">✅</span> Advantages</h2>
                 <div class="card-grid">
-                    <div class="card">
-                        <h3>⚡ Fast Processing</h3>
-                        <p>Data is processed instantly without delays</p>
-                    </div>
-                    <div class="card">
-                        <h3>🔄 Real-Time Info</h3>
-                        <p>Information is updated immediately</p>
-                    </div>
-                    <div class="card">
-                        <h3>✔️ Reduced Errors</h3>
-                        <p>Mistakes are detected and corrected quickly</p>
-                    </div>
-                    <div class="card">
-                        <h3>🎯 Better Decisions</h3>
-                        <p>Current data improves decision making</p>
-                    </div>
-                    <div class="card">
-                        <h3>🌍 Easy Access</h3>
-                        <p>Access from different locations anytime</p>
-                    </div>
+                    <div class="card"><h3>⚡ Fast Processing</h3><p>Data is processed instantly without delays</p></div>
+                    <div class="card"><h3>🔄 Real-Time Info</h3><p>Information is updated immediately</p></div>
+                    <div class="card"><h3>✔️ Reduced Errors</h3><p>Mistakes are detected and corrected quickly</p></div>
+                    <div class="card"><h3>🎯 Better Decisions</h3><p>Current data improves decision making</p></div>
+                    <div class="card"><h3>🌍 Easy Access</h3><p>Access from different locations anytime</p></div>
                 </div>
             </div>
             
@@ -378,21 +347,111 @@
             <div class="section">
                 <h2><span class="icon">⚖️</span> Online vs Batch Processing</h2>
                 <table>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Online Processing</th>
-                        <th>Batch Processing</th>
-                    </tr>
-                    <tr>
-                        <td><b>Speed</b></td>
-                        <td>Instant/Real-time</td>
-                        <td>Delayed/Scheduled</td>
-                    </tr>
-                    <tr>
-                        <td><b>Interaction</b></td>
-                        <td>User gets immediate feedback</td>
-                        <td>No user interaction</td>
-                    </tr>
-                    <tr>
-                        <td><b>Example</b></td>
-                        <td>ATM, Mobile
+                    <tr><th>Feature</th><th>Online Processing</th><th>Batch Processing</th></tr>
+                    <tr><td><b>Speed</b></td><td>Instant/Real-time</td><td>Delayed/Scheduled</td></tr>
+                    <tr><td><b>Interaction</b></td><td>User gets immediate feedback</td><td>No user interaction</td></tr>
+                    <tr><td><b>Example</b></td><td>ATM, Mobile Money</td><td>Payroll, Monthly Bills</td></tr>
+                </table>
+            </div>
+            
+            <div class="fact-box">
+                <h3>💡 Did You Know?</h3>
+                <p>Over 5 billion online transactions happen globally every day through online data processing systems!</p>
+            </div>
+        </div>
+        
+        <!-- Swahili Tab -->
+        <div id="swahili" class="tab-content">
+            <div class="section section-blue">
+                <h2><span class="icon">📘</span> Maana</h2>
+                <p>Mfumo wa Uchakataji Data Mtandaoni huchakata data mara tu zinapoingizwa na kutoa taarifa kwa wakati halisi. Mtumiaji anapata majibu papo hapo bila kusubiri.</p>
+            </div>
+            
+            <div class="section section-orange">
+                <h2><span class="icon">⚙️</span> Jinsi Inavyofanya Kazi</h2>
+                <div class="flow">
+                    <div class="flow-step">
+                        <div style="font-size: 2.5rem;">⌨️</div>
+                        <h3>Ingizo</h3>
+                        <p>Mtumiaji anaingiza data</p>
+                    </div>
+                    <div class="flow-arrow">➡️</div>
+                    <div class="flow-step">
+                        <div style="font-size: 2.5rem;">⚡</div>
+                        <h3>Uchakataji</h3>
+                        <p>Uchakataji wa papo hapo</p>
+                    </div>
+                    <div class="flow-arrow">➡️</div>
+                    <div class="flow-step">
+                        <div style="font-size: 2.5rem;">📊</div>
+                        <h3>Matojeo</h3>
+                        <p>Matokeo ya wakati halisi</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section section-green">
+                <h2><span class="icon">✅</span> Faida</h2>
+                <div class="card-grid">
+                    <div class="card"><h3>⚡ Uchakataji Haraka</h3><p>Data huchakatwa papo hapo bila uchelewaji</p></div>
+                    <div class="card"><h3>🔄 Taarifa za Wakati Halisi</h3><p>Taarifa husasishwa mara moja</p></div>
+                    <div class="card"><h3>✔️ Makosa Madogo</h3><p>Makosa hugunduliwa na kurekebishwa haraka</p></div>
+                    <div class="card"><h3>🎯 Maamuzi Bora</h3><p>Data ya sasa huboresha maamuzi</p></div>
+                    <div class="card"><h3>🌍 Ufikiaji Rahisi</h3><p>Fikia kutoka mahali popote wakati wowote</p></div>
+                </div>
+            </div>
+            
+            <div class="section section-purple">
+                <h2><span class="icon">💡</span> Mifano</h2>
+                <div class="card-grid">
+                    <div class="card"><h3>🏧 Mfumo wa ATM</h3><p>Kuangalia salio na kutoa pesa papo hapo</p></div>
+                    <div class="card"><h3>🛒 Ununuzi Mtandaoni</h3><p>Malipo na hesabu ya bidhaa papo hapo</p></div>
+                    <div class="card"><h3>✈️ Uwekaji Nafasi Ndege</h3><p>Mfumo wa kuhifadhi viti moja kwa moja</p></div>
+                    <div class="card"><h3>📱 Huduma za Pesa</h3><p>Kutuma pesa papo hapo</p></div>
+                    <div class="card"><h3>🎓 Usajili wa Wanafunzi</h3><p>Kujiandikisha masomo mtandaoni</p></div>
+                </div>
+            </div>
+            
+            <div class="fact-box">
+                <h3>💡 Je, Wajua?</h3>
+                <p>Zaidi ya miamala bilioni 5 ya mtandaoni hufanyika duniani kila siku kupitia mifumo ya uchakataji data mtandaoni!</p>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="window.print()">🖨️ Print / Save PDF</button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Online Data Processing System | Designed for Learning © 2026
+    </div>
+</div>
+
+<script>
+    function switchTab(lang, btn) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+        document.getElementById(lang).classList.add('active');
+        btn.classList.add('active');
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    });
+    
+    document.querySelectorAll('.card, .section').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
